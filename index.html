@@ -22,11 +22,13 @@
 .intro {
     margin-bottom: 60px;
 }
-
+#black {
+    color:black;
+}
 .intro .hr-line {
     width: 60px;
     height: 4px;
-    background-color: var(--dark);
+    background-color: rgb(221 16 16);
     display: inline-block;
 }
 
@@ -36,7 +38,9 @@
     margin-top: 16px;
     margin-bottom: 16px;
 }
-
+*{
+    color: white;
+}
 .intro p {
     max-width: 500px;
 }
@@ -47,7 +51,7 @@
 }
 
 .intro.intro-dark .hr-line {
-    background-color: white;
+    background-color: rgb(253, 4, 4);
 }#about img {
     border-radius: var(--border-radius);
 }
@@ -71,12 +75,21 @@
     padding-bottom: 30px;
     border-bottom: var(--border-width) solid var(--border-color);
 }
-
+#white{
+    color:white; 
+    margin: 5px;
+    border: 0.7px solid white;
+}
 .footer-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
 }
         body{
+            background-image: url("./pic.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
             font-family: "Barlow",sans-serif;
             line-height: 1.8;
             color:var(--body);
@@ -85,6 +98,9 @@
             font-weight: 800;
         }
         a{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
             color:var(--body);
             text-decoration: none;
             transition: all 0,4s ease;
@@ -99,7 +115,7 @@
          padding-bottom: 170px;
         }
         #hero{
-            background: url("bg.avif");
+            /* background: url("bg.avif"); */
             min-height: 100vh;
             background-position: center;
             background-size: cover;
@@ -123,6 +139,9 @@
             .navbar{
                 background-color:var(--dark);
             }
+        }
+        #ss{
+            border: 0.8px solid white;
         }
         #hero h1,
         #hero p{
@@ -175,7 +194,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-1">ANKITA MISHRA</h1>
                     <p>Hi! I'm Ankita Mishra,a web designer enthusiast based in lucknow,Uttar Pradesh.Here is my portfolio to give you more details of me.</p>
-                    <a href="https://github.com/ANKITAMISHRA29"target="blank" class="btn btn-outline-dark">Explore My Work</a>
+                    <a href="https://github.com/ANKITAMISHRA29" target="blank" class="btn btn-outline-light">Explore My Work</a>
                 </div>
             </div>
         </div>
@@ -191,7 +210,7 @@
                     <p>I am ANKITA MISHRA student of B.Tech Computer Science Engineering at Amity University Uttar Pradesh,Lucknow Campus.I did my schooling from Delhi Public School,Eldeco with 95.4% marks in class 10th and 91.2% in class 12th with PCM stream.I was also a NCC cadet and became an alumini of the prestigious organization with the C certificate at the rank of LCPL.
                     </p>
                     <p>I have fair communication,Public Speaking,Leadership and Frontend Development Skills with an intermediate knowledge in C and java language specifying the two stars from hackerrank in both the languages.</p>
-                    <a href="#" class="btn btn-outline-dark">Contact Me</a>
+                    <a href="#" class="btn btn-outline-light">Contact Me</a>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="./assets/img/about_me.jpg" alt="">
@@ -212,7 +231,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Reaction Time</h5>
-                              <p class="card-text">This The fun type game which would help you to increase your response or reaction time and will let you know how much time you took to respond to an image.</p>
+                              <p id="black" class="card-text">This The fun type game which would help you to increase your response or reaction time and will let you know how much time you took to respond to an image.</p>
                               <a href="https://github.com/ANKITAMISHRA29/Reaction_Time" class="btn btn-primary">Github repository</a>
                             </div>
                           </div>
@@ -221,7 +240,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">TIC-TAC-TOE</h5>
-                              <p class="card-text">This is a basic TIC-TAC-TOE game which I have built using HTML,CSS and JS.This Could Be a Great Game To Make You Nostalgic and Having fun with Friends .</p>
+                              <p id="black" class="card-text">This is a basic TIC-TAC-TOE game which I have built using HTML,CSS and JS.This Could Be a Great Game To Make You Nostalgic and Having fun with Friends .</p>
                               <a href="https://github.com/ANKITAMISHRA29/TIC-TAC-TOE- "class="btn btn-primary" target="blank">Github repository</a>
                             </div>
                           </div>
@@ -241,7 +260,7 @@
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
                     <div class="intro text-center">
-                        <div class="hr-line"></div>
+                        <div  class="hr-line"></div>
                         <h1 class="display-4">LET'S GET IN<br>
                             TOUCH TODAY</h1>
                         <p class="mx-auto">PLEASE GIVE YOUR DETAILS HERE ,I'LL SURELY TRY TO CONNECT WITH YOU.</p>
@@ -264,7 +283,7 @@
                             <textarea class="form-control" placeholder="message" rows="5"></textarea>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-dark">Send Message</button>
+                            <button id="ss" class="btn btn-dark">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -279,7 +298,7 @@
                         <div class="hr-line"></div>
                         <h1 class="display-4">MORE LINKS TO GET CONNECT</h1>
                     </div>
-                    <a href="https://github.com/ANKITAMISHRA29" class="btn btn-outline-dark"target="blank">GitHub</a><a href="https://www.linkedin.com/in/ankita-mishra-75593b24a" class="btn btn-outline-dark" target="blank">Linkdln</a>
+                    <a id="white"  href="https://github.com/ANKITAMISHRA29" class="btn btn-outline-dark" target="blank">GitHub</a><a id="white"  href="https://www.linkedin.com/in/ankita-mishra-75593b24a" class="btn btn-outline-dark" target="blank">Linkdln</a>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="./assets/img/about_me.jpg" alt="">
@@ -309,7 +328,7 @@
                         <p class="mb-0">Copyright © All Rights Reserved ANKITA MISHRA</p>
                     </div>
                     <div class="col-auto">
-                        <p class="mb-0">Designed by <a href="">ANKITA MISHRA</a></p>
+                        <p  class="mb-0">Designed by <a style="color: white;" href="">ANKITA MISHRA</a></p>
                     </div>
                 </div>
             </div>
